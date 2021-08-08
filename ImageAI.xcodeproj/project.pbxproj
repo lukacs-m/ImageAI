@@ -18,6 +18,14 @@
 		B857AE5F26C0307A00AE6D52 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B857AE5E26C0307A00AE6D52 /* Realm */; };
 		B857AE6126C0307A00AE6D52 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B857AE6026C0307A00AE6D52 /* RealmSwift */; };
 		B857AE6426C0309600AE6D52 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B857AE6326C0309600AE6D52 /* Kingfisher */; };
+		B857AE7426C0364C00AE6D52 /* Tools+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE6F26C0364C00AE6D52 /* Tools+Dependencies.swift */; };
+		B857AE7526C0364C00AE6D52 /* Routing+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7026C0364C00AE6D52 /* Routing+Dependencies.swift */; };
+		B857AE7626C0364C00AE6D52 /* ViewModels+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7126C0364C00AE6D52 /* ViewModels+Dependencies.swift */; };
+		B857AE7726C0364C00AE6D52 /* Repositories+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7226C0364C00AE6D52 /* Repositories+Dependencies.swift */; };
+		B857AE7826C0364C00AE6D52 /* DependenciesRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7326C0364C00AE6D52 /* DependenciesRegistration.swift */; };
+		B857AE7A26C0366F00AE6D52 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7926C0366F00AE6D52 /* MainRouter.swift */; };
+		B857AE7D26C037B300AE6D52 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7B26C037B300AE6D52 /* MainTabView.swift */; };
+		B857AE7E26C037B300AE6D52 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7C26C037B300AE6D52 /* MainTabViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,14 @@
 		B857AE4526C02FD400AE6D52 /* ImageAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B857AE4926C02FD400AE6D52 /* ImageAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAIUITests.swift; sourceTree = "<group>"; };
 		B857AE4B26C02FD400AE6D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B857AE6F26C0364C00AE6D52 /* Tools+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tools+Dependencies.swift"; sourceTree = "<group>"; };
+		B857AE7026C0364C00AE6D52 /* Routing+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routing+Dependencies.swift"; sourceTree = "<group>"; };
+		B857AE7126C0364C00AE6D52 /* ViewModels+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels+Dependencies.swift"; sourceTree = "<group>"; };
+		B857AE7226C0364C00AE6D52 /* Repositories+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Dependencies.swift"; sourceTree = "<group>"; };
+		B857AE7326C0364C00AE6D52 /* DependenciesRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesRegistration.swift; sourceTree = "<group>"; };
+		B857AE7926C0366F00AE6D52 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		B857AE7B26C037B300AE6D52 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B857AE7C26C037B300AE6D52 /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +121,11 @@
 		B857AE2B26C02FD100AE6D52 /* ImageAI */ = {
 			isa = PBXGroup;
 			children = (
-				B857AE6826C0318F00AE6D52 /* Common */,
-				B857AE6726C0318900AE6D52 /* Scenes */,
 				B857AE6526C030A600AE6D52 /* App */,
+				B857AE6C26C035E100AE6D52 /* AppManagement */,
+				B857AE6826C0318F00AE6D52 /* Common */,
 				B857AE2E26C02FD100AE6D52 /* ContentView.swift */,
+				B857AE6726C0318900AE6D52 /* Scenes */,
 			);
 			path = ImageAI;
 			sourceTree = "<group>";
@@ -161,6 +178,7 @@
 		B857AE6726C0318900AE6D52 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B857AE6B26C035CC00AE6D52 /* MainTabView */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -170,6 +188,44 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		B857AE6B26C035CC00AE6D52 /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE7B26C037B300AE6D52 /* MainTabView.swift */,
+				B857AE7C26C037B300AE6D52 /* MainTabViewModel.swift */,
+			);
+			path = MainTabView;
+			sourceTree = "<group>";
+		};
+		B857AE6C26C035E100AE6D52 /* AppManagement */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE6E26C0363200AE6D52 /* DependencyInjection */,
+				B857AE6D26C0362100AE6D52 /* Routing */,
+			);
+			path = AppManagement;
+			sourceTree = "<group>";
+		};
+		B857AE6D26C0362100AE6D52 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE7926C0366F00AE6D52 /* MainRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		B857AE6E26C0363200AE6D52 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE6F26C0364C00AE6D52 /* Tools+Dependencies.swift */,
+				B857AE7026C0364C00AE6D52 /* Routing+Dependencies.swift */,
+				B857AE7126C0364C00AE6D52 /* ViewModels+Dependencies.swift */,
+				B857AE7226C0364C00AE6D52 /* Repositories+Dependencies.swift */,
+				B857AE7326C0364C00AE6D52 /* DependenciesRegistration.swift */,
+			);
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +412,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B857AE2F26C02FD100AE6D52 /* ContentView.swift in Sources */,
+				B857AE7A26C0366F00AE6D52 /* MainRouter.swift in Sources */,
 				B857AE2D26C02FD100AE6D52 /* ImageAIApp.swift in Sources */,
+				B857AE7D26C037B300AE6D52 /* MainTabView.swift in Sources */,
+				B857AE7426C0364C00AE6D52 /* Tools+Dependencies.swift in Sources */,
+				B857AE7526C0364C00AE6D52 /* Routing+Dependencies.swift in Sources */,
+				B857AE7726C0364C00AE6D52 /* Repositories+Dependencies.swift in Sources */,
+				B857AE7626C0364C00AE6D52 /* ViewModels+Dependencies.swift in Sources */,
+				B857AE7E26C037B300AE6D52 /* MainTabViewModel.swift in Sources */,
+				B857AE7826C0364C00AE6D52 /* DependenciesRegistration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
