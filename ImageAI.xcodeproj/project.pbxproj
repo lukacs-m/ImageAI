@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B857AE2D26C02FD100AE6D52 /* ImageAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE2C26C02FD100AE6D52 /* ImageAIApp.swift */; };
+		B857AE2F26C02FD100AE6D52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE2E26C02FD100AE6D52 /* ContentView.swift */; };
+		B857AE3126C02FD400AE6D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B857AE3026C02FD400AE6D52 /* Assets.xcassets */; };
+		B857AE3426C02FD400AE6D52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B857AE3326C02FD400AE6D52 /* Preview Assets.xcassets */; };
+		B857AE3F26C02FD400AE6D52 /* ImageAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE3E26C02FD400AE6D52 /* ImageAITests.swift */; };
+		B857AE4A26C02FD400AE6D52 /* ImageAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE4926C02FD400AE6D52 /* ImageAIUITests.swift */; };
+		B857AE5926C0303900AE6D52 /* SwiftUICombineToolBox in Frameworks */ = {isa = PBXBuildFile; productRef = B857AE5826C0303900AE6D52 /* SwiftUICombineToolBox */; };
+		B857AE5C26C0305B00AE6D52 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = B857AE5B26C0305B00AE6D52 /* Resolver */; };
+		B857AE5F26C0307A00AE6D52 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B857AE5E26C0307A00AE6D52 /* Realm */; };
+		B857AE6126C0307A00AE6D52 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B857AE6026C0307A00AE6D52 /* RealmSwift */; };
+		B857AE6426C0309600AE6D52 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B857AE6326C0309600AE6D52 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B857AE3B26C02FD400AE6D52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B857AE2126C02FD100AE6D52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B857AE2826C02FD100AE6D52;
+			remoteInfo = ImageAI;
+		};
+		B857AE4626C02FD400AE6D52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B857AE2126C02FD100AE6D52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B857AE2826C02FD100AE6D52;
+			remoteInfo = ImageAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B857AE2926C02FD100AE6D52 /* ImageAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B857AE2C26C02FD100AE6D52 /* ImageAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAIApp.swift; sourceTree = "<group>"; };
+		B857AE2E26C02FD100AE6D52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B857AE3026C02FD400AE6D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B857AE3326C02FD400AE6D52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B857AE3526C02FD400AE6D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B857AE3A26C02FD400AE6D52 /* ImageAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B857AE3E26C02FD400AE6D52 /* ImageAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAITests.swift; sourceTree = "<group>"; };
+		B857AE4026C02FD400AE6D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B857AE4526C02FD400AE6D52 /* ImageAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B857AE4926C02FD400AE6D52 /* ImageAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAIUITests.swift; sourceTree = "<group>"; };
+		B857AE4B26C02FD400AE6D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B857AE2626C02FD100AE6D52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B857AE6126C0307A00AE6D52 /* RealmSwift in Frameworks */,
+				B857AE5F26C0307A00AE6D52 /* Realm in Frameworks */,
+				B857AE5C26C0305B00AE6D52 /* Resolver in Frameworks */,
+				B857AE5926C0303900AE6D52 /* SwiftUICombineToolBox in Frameworks */,
+				B857AE6426C0309600AE6D52 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B857AE3726C02FD400AE6D52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B857AE4226C02FD400AE6D52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B857AE2026C02FD100AE6D52 = {
+			isa = PBXGroup;
+			children = (
+				B857AE2B26C02FD100AE6D52 /* ImageAI */,
+				B857AE3D26C02FD400AE6D52 /* ImageAITests */,
+				B857AE4826C02FD400AE6D52 /* ImageAIUITests */,
+				B857AE2A26C02FD100AE6D52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B857AE2A26C02FD100AE6D52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE2926C02FD100AE6D52 /* ImageAI.app */,
+				B857AE3A26C02FD400AE6D52 /* ImageAITests.xctest */,
+				B857AE4526C02FD400AE6D52 /* ImageAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B857AE2B26C02FD100AE6D52 /* ImageAI */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE6826C0318F00AE6D52 /* Common */,
+				B857AE6726C0318900AE6D52 /* Scenes */,
+				B857AE6526C030A600AE6D52 /* App */,
+				B857AE2E26C02FD100AE6D52 /* ContentView.swift */,
+			);
+			path = ImageAI;
+			sourceTree = "<group>";
+		};
+		B857AE3226C02FD400AE6D52 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE3326C02FD400AE6D52 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B857AE3D26C02FD400AE6D52 /* ImageAITests */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE3E26C02FD400AE6D52 /* ImageAITests.swift */,
+				B857AE4026C02FD400AE6D52 /* Info.plist */,
+			);
+			path = ImageAITests;
+			sourceTree = "<group>";
+		};
+		B857AE4826C02FD400AE6D52 /* ImageAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE4926C02FD400AE6D52 /* ImageAIUITests.swift */,
+				B857AE4B26C02FD400AE6D52 /* Info.plist */,
+			);
+			path = ImageAIUITests;
+			sourceTree = "<group>";
+		};
+		B857AE6526C030A600AE6D52 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE3226C02FD400AE6D52 /* Preview Content */,
+				B857AE6626C0311D00AE6D52 /* Ressources */,
+				B857AE2C26C02FD100AE6D52 /* ImageAIApp.swift */,
+				B857AE3526C02FD400AE6D52 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B857AE6626C0311D00AE6D52 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE3026C02FD400AE6D52 /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		B857AE6726C0318900AE6D52 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B857AE6826C0318F00AE6D52 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B857AE2826C02FD100AE6D52 /* ImageAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B857AE4E26C02FD400AE6D52 /* Build configuration list for PBXNativeTarget "ImageAI" */;
+			buildPhases = (
+				B857AE6926C0323600AE6D52 /* SwiftLint */,
+				B857AE2526C02FD100AE6D52 /* Sources */,
+				B857AE2626C02FD100AE6D52 /* Frameworks */,
+				B857AE2726C02FD100AE6D52 /* Resources */,
+				B857AE6A26C0325900AE6D52 /* SwiftFormat */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageAI;
+			packageProductDependencies = (
+				B857AE5826C0303900AE6D52 /* SwiftUICombineToolBox */,
+				B857AE5B26C0305B00AE6D52 /* Resolver */,
+				B857AE5E26C0307A00AE6D52 /* Realm */,
+				B857AE6026C0307A00AE6D52 /* RealmSwift */,
+				B857AE6326C0309600AE6D52 /* Kingfisher */,
+			);
+			productName = ImageAI;
+			productReference = B857AE2926C02FD100AE6D52 /* ImageAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B857AE3926C02FD400AE6D52 /* ImageAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B857AE5126C02FD400AE6D52 /* Build configuration list for PBXNativeTarget "ImageAITests" */;
+			buildPhases = (
+				B857AE3626C02FD400AE6D52 /* Sources */,
+				B857AE3726C02FD400AE6D52 /* Frameworks */,
+				B857AE3826C02FD400AE6D52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B857AE3C26C02FD400AE6D52 /* PBXTargetDependency */,
+			);
+			name = ImageAITests;
+			productName = ImageAITests;
+			productReference = B857AE3A26C02FD400AE6D52 /* ImageAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B857AE4426C02FD400AE6D52 /* ImageAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B857AE5426C02FD400AE6D52 /* Build configuration list for PBXNativeTarget "ImageAIUITests" */;
+			buildPhases = (
+				B857AE4126C02FD400AE6D52 /* Sources */,
+				B857AE4226C02FD400AE6D52 /* Frameworks */,
+				B857AE4326C02FD400AE6D52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B857AE4726C02FD400AE6D52 /* PBXTargetDependency */,
+			);
+			name = ImageAIUITests;
+			productName = ImageAIUITests;
+			productReference = B857AE4526C02FD400AE6D52 /* ImageAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B857AE2126C02FD100AE6D52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B857AE2826C02FD100AE6D52 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					B857AE3926C02FD400AE6D52 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B857AE2826C02FD100AE6D52;
+					};
+					B857AE4426C02FD400AE6D52 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B857AE2826C02FD100AE6D52;
+					};
+				};
+			};
+			buildConfigurationList = B857AE2426C02FD100AE6D52 /* Build configuration list for PBXProject "ImageAI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B857AE2026C02FD100AE6D52;
+			packageReferences = (
+				B857AE5726C0303900AE6D52 /* XCRemoteSwiftPackageReference "SwiftUICombineToolBox" */,
+				B857AE5A26C0305B00AE6D52 /* XCRemoteSwiftPackageReference "Resolver" */,
+				B857AE5D26C0307A00AE6D52 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				B857AE6226C0309600AE6D52 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = B857AE2A26C02FD100AE6D52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B857AE2826C02FD100AE6D52 /* ImageAI */,
+				B857AE3926C02FD400AE6D52 /* ImageAITests */,
+				B857AE4426C02FD400AE6D52 /* ImageAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B857AE2726C02FD100AE6D52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B857AE3426C02FD400AE6D52 /* Preview Assets.xcassets in Resources */,
+				B857AE3126C02FD400AE6D52 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B857AE3826C02FD400AE6D52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B857AE4326C02FD400AE6D52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B857AE6926C0323600AE6D52 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH=/opt/homebrew/bin/:$PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B857AE6A26C0325900AE6D52 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH=/opt/homebrew/bin/:$PATH\n\nif which swiftformat >/dev/null; then\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B857AE2526C02FD100AE6D52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B857AE2F26C02FD100AE6D52 /* ContentView.swift in Sources */,
+				B857AE2D26C02FD100AE6D52 /* ImageAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B857AE3626C02FD400AE6D52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B857AE3F26C02FD400AE6D52 /* ImageAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B857AE4126C02FD400AE6D52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B857AE4A26C02FD400AE6D52 /* ImageAIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B857AE3C26C02FD400AE6D52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B857AE2826C02FD100AE6D52 /* ImageAI */;
+			targetProxy = B857AE3B26C02FD400AE6D52 /* PBXContainerItemProxy */;
+		};
+		B857AE4726C02FD400AE6D52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B857AE2826C02FD100AE6D52 /* ImageAI */;
+			targetProxy = B857AE4626C02FD400AE6D52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B857AE4C26C02FD400AE6D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B857AE4D26C02FD400AE6D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B857AE4F26C02FD400AE6D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageAI/App/Preview Content\"";
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ImageAI/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlukacs.ImageAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B857AE5026C02FD400AE6D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageAI/App/Preview Content\"";
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ImageAI/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlukacs.ImageAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B857AE5226C02FD400AE6D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				INFOPLIST_FILE = ImageAITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlukacs.ImageAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageAI.app/ImageAI";
+			};
+			name = Debug;
+		};
+		B857AE5326C02FD400AE6D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				INFOPLIST_FILE = ImageAITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlukacs.ImageAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageAI.app/ImageAI";
+			};
+			name = Release;
+		};
+		B857AE5526C02FD400AE6D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				INFOPLIST_FILE = ImageAIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlukacs.ImageAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageAI;
+			};
+			name = Debug;
+		};
+		B857AE5626C02FD400AE6D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
+				INFOPLIST_FILE = ImageAIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlukacs.ImageAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B857AE2426C02FD100AE6D52 /* Build configuration list for PBXProject "ImageAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B857AE4C26C02FD400AE6D52 /* Debug */,
+				B857AE4D26C02FD400AE6D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B857AE4E26C02FD400AE6D52 /* Build configuration list for PBXNativeTarget "ImageAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B857AE4F26C02FD400AE6D52 /* Debug */,
+				B857AE5026C02FD400AE6D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B857AE5126C02FD400AE6D52 /* Build configuration list for PBXNativeTarget "ImageAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B857AE5226C02FD400AE6D52 /* Debug */,
+				B857AE5326C02FD400AE6D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B857AE5426C02FD400AE6D52 /* Build configuration list for PBXNativeTarget "ImageAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B857AE5526C02FD400AE6D52 /* Debug */,
+				B857AE5626C02FD400AE6D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B857AE5726C0303900AE6D52 /* XCRemoteSwiftPackageReference "SwiftUICombineToolBox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukacs-m/SwiftUICombineToolBox";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.11;
+			};
+		};
+		B857AE5A26C0305B00AE6D52 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.3;
+			};
+		};
+		B857AE5D26C0307A00AE6D52 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.12.0;
+			};
+		};
+		B857AE6226C0309600AE6D52 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B857AE5826C0303900AE6D52 /* SwiftUICombineToolBox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B857AE5726C0303900AE6D52 /* XCRemoteSwiftPackageReference "SwiftUICombineToolBox" */;
+			productName = SwiftUICombineToolBox;
+		};
+		B857AE5B26C0305B00AE6D52 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B857AE5A26C0305B00AE6D52 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		B857AE5E26C0307A00AE6D52 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B857AE5D26C0307A00AE6D52 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		B857AE6026C0307A00AE6D52 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B857AE5D26C0307A00AE6D52 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		B857AE6326C0309600AE6D52 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B857AE6226C0309600AE6D52 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B857AE2126C02FD100AE6D52 /* Project object */;
+}
