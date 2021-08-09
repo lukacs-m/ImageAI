@@ -13,5 +13,6 @@ import Resolver
 extension Resolver {
     public static func registerViewModels() {
         register { MainTabViewModel() }.scope(.application)
+        register { VideoViewModel() }.scope(.shared)
     }
 }

@@ -12,6 +12,6 @@ import Resolver
 
 extension Resolver {
     public static func registerRepositories() {
-        // register you repositories
+        register { CameraRepository() as CameraManager }.scope(.shared)
     }
 }

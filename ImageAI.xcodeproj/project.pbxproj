@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B857AE2D26C02FD100AE6D52 /* ImageAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE2C26C02FD100AE6D52 /* ImageAIApp.swift */; };
-		B857AE2F26C02FD100AE6D52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE2E26C02FD100AE6D52 /* ContentView.swift */; };
 		B857AE3126C02FD400AE6D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B857AE3026C02FD400AE6D52 /* Assets.xcassets */; };
 		B857AE3426C02FD400AE6D52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B857AE3326C02FD400AE6D52 /* Preview Assets.xcassets */; };
 		B857AE3F26C02FD400AE6D52 /* ImageAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE3E26C02FD400AE6D52 /* ImageAITests.swift */; };
@@ -26,6 +25,9 @@
 		B857AE7A26C0366F00AE6D52 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7926C0366F00AE6D52 /* MainRouter.swift */; };
 		B857AE7D26C037B300AE6D52 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7B26C037B300AE6D52 /* MainTabView.swift */; };
 		B857AE7E26C037B300AE6D52 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE7C26C037B300AE6D52 /* MainTabViewModel.swift */; };
+		B857AE8126C03A5300AE6D52 /* CameraRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE8026C03A5300AE6D52 /* CameraRepository.swift */; };
+		B857AE8526C03F1900AE6D52 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE8326C03F1900AE6D52 /* VideoView.swift */; };
+		B857AE8626C03F1900AE6D52 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857AE8426C03F1900AE6D52 /* VideoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,6 @@
 /* Begin PBXFileReference section */
 		B857AE2926C02FD100AE6D52 /* ImageAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B857AE2C26C02FD100AE6D52 /* ImageAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAIApp.swift; sourceTree = "<group>"; };
-		B857AE2E26C02FD100AE6D52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B857AE3026C02FD400AE6D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B857AE3326C02FD400AE6D52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B857AE3526C02FD400AE6D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +67,9 @@
 		B857AE7926C0366F00AE6D52 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		B857AE7B26C037B300AE6D52 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		B857AE7C26C037B300AE6D52 /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
+		B857AE8026C03A5300AE6D52 /* CameraRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRepository.swift; sourceTree = "<group>"; };
+		B857AE8326C03F1900AE6D52 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		B857AE8426C03F1900AE6D52 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +128,6 @@
 				B857AE6526C030A600AE6D52 /* App */,
 				B857AE6C26C035E100AE6D52 /* AppManagement */,
 				B857AE6826C0318F00AE6D52 /* Common */,
-				B857AE2E26C02FD100AE6D52 /* ContentView.swift */,
 				B857AE6726C0318900AE6D52 /* Scenes */,
 			);
 			path = ImageAI;
@@ -178,6 +181,7 @@
 		B857AE6726C0318900AE6D52 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B857AE8226C03F0400AE6D52 /* VideoView */,
 				B857AE6B26C035CC00AE6D52 /* MainTabView */,
 			);
 			path = Scenes;
@@ -186,6 +190,7 @@
 		B857AE6826C0318F00AE6D52 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B857AE7F26C03A3F00AE6D52 /* Repositories */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -226,6 +231,23 @@
 				B857AE7326C0364C00AE6D52 /* DependenciesRegistration.swift */,
 			);
 			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		B857AE7F26C03A3F00AE6D52 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE8026C03A5300AE6D52 /* CameraRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B857AE8226C03F0400AE6D52 /* VideoView */ = {
+			isa = PBXGroup;
+			children = (
+				B857AE8326C03F1900AE6D52 /* VideoView.swift */,
+				B857AE8426C03F1900AE6D52 /* VideoViewModel.swift */,
+			);
+			path = VideoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,7 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B857AE2F26C02FD100AE6D52 /* ContentView.swift in Sources */,
+				B857AE8126C03A5300AE6D52 /* CameraRepository.swift in Sources */,
 				B857AE7A26C0366F00AE6D52 /* MainRouter.swift in Sources */,
 				B857AE2D26C02FD100AE6D52 /* ImageAIApp.swift in Sources */,
 				B857AE7D26C037B300AE6D52 /* MainTabView.swift in Sources */,
@@ -420,6 +442,8 @@
 				B857AE7726C0364C00AE6D52 /* Repositories+Dependencies.swift in Sources */,
 				B857AE7626C0364C00AE6D52 /* ViewModels+Dependencies.swift in Sources */,
 				B857AE7E26C037B300AE6D52 /* MainTabViewModel.swift in Sources */,
+				B857AE8526C03F1900AE6D52 /* VideoView.swift in Sources */,
+				B857AE8626C03F1900AE6D52 /* VideoViewModel.swift in Sources */,
 				B857AE7826C0364C00AE6D52 /* DependenciesRegistration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

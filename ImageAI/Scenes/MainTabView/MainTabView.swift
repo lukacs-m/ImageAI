@@ -26,13 +26,13 @@ struct MainTabView: View {
 }
 
 extension MainTabView {
-    private func createTabItem(for type: MainTabDestinationType, shouldUpdateOffset: Bool = false) -> some View {
+    private func createTabItem(for type: MainTabBarDestinationType, shouldUpdateOffset: Bool = false) -> some View {
         LazyView(router.goToPage(for: type).embedInNavigation())
             .tabItem {
-                Label(MainTabDestinationType.getName(for: type),
-                      systemImage: MainTabDestinationType.getIconName(for: type))
+                Label(type.getName(),
+                      systemImage: type.getIconName())
             }
-            .tag(MainTabDestinationType.getTabNumber(for: type))
+            .tag(type.getTabNumber())
     }
 }
 

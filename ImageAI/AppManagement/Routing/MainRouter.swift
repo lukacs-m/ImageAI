@@ -10,63 +10,56 @@ import SwiftUICombineToolBox
 
 final class MainRouter {}
 
-enum MainTabDestinationType {
+enum MainTabBarDestinationType {
     case video
     case photo
     case library
 
-    static func getName(for type: MainTabDestinationType) -> String {
-        var name: String!
-
-        switch type {
+    func getName() -> String {
+        switch self {
         case .video:
-            name = "For You"
+            return "Video detection"
         case .photo:
-            name = "Meditations"
+            return "Photo detection"
         case .library:
-            name = "Your library"
+            return "Library"
         }
-        return name
     }
 
-    static func getIconName(for type: MainTabDestinationType) -> String {
-        var iconName: String!
-        switch type {
+    func getIconName() -> String {
+        switch self {
         case .video:
-            iconName = "video"
+            return "video"
         case .photo:
-            iconName = "camera"
+            return "camera"
         case .library:
-            iconName = "building.columns"
+            return "building.columns"
         }
-        return iconName
     }
 
-    static func getTabNumber(for type: MainTabDestinationType) -> Int {
-        var tabNumber: Int!
-        switch type {
+    func getTabNumber() -> Int {
+        switch self {
         case .video:
-            tabNumber = 0
+            return 0
         case .photo:
-            tabNumber = 1
+            return 1
         case .library:
-            tabNumber = 2
+            return 2
         }
-        return tabNumber
     }
 }
 
 // MARK: - Tab view navigation
 
 protocol MainTabNavigation {
-    func goToPage(for destination: MainTabDestinationType) -> AnyView
+    func goToPage(for destination: MainTabBarDestinationType) -> AnyView
 }
 
 extension MainRouter: MainTabNavigation {
-    func goToPage(for destination: MainTabDestinationType) -> AnyView {
+    func goToPage(for destination: MainTabBarDestinationType) -> AnyView {
         switch destination {
         case .video:
-            return Text("Account").eraseToAnyView()
+            return VideoView().eraseToAnyView()
         case .photo:
             return Text("Account").eraseToAnyView()
         case .library:
